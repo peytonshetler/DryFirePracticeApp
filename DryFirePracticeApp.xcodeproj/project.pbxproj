@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79BE87A82892CCC400E7399A /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BE87A72892CCC400E7399A /* TimerButton.swift */; };
+		79BE87AB2894428700E7399A /* Timer_Beep.aif in Resources */ = {isa = PBXBuildFile; fileRef = 79BE87AA2894428700E7399A /* Timer_Beep.aif */; };
+		79BE87AD2894429000E7399A /* Par_Timer_Beep.aif in Resources */ = {isa = PBXBuildFile; fileRef = 79BE87AC2894429000E7399A /* Par_Timer_Beep.aif */; };
+		79BE87AF289442C000E7399A /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BE87AE289442C000E7399A /* AudioPlayer.swift */; };
 		79F4546B288C833C00D8D667 /* DryFirePracticeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4546A288C833C00D8D667 /* DryFirePracticeAppApp.swift */; };
-		79F4546D288C833C00D8D667 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4546C288C833C00D8D667 /* ContentView.swift */; };
 		79F4546F288C833D00D8D667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79F4546E288C833D00D8D667 /* Assets.xcassets */; };
 		79F45472288C833D00D8D667 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79F45471288C833D00D8D667 /* Preview Assets.xcassets */; };
+		79F45479288C83AA00D8D667 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F45478288C83AA00D8D667 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79BE87A72892CCC400E7399A /* TimerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButton.swift; sourceTree = "<group>"; };
+		79BE87AA2894428700E7399A /* Timer_Beep.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Timer_Beep.aif; sourceTree = "<group>"; };
+		79BE87AC2894429000E7399A /* Par_Timer_Beep.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Par_Timer_Beep.aif; sourceTree = "<group>"; };
+		79BE87AE289442C000E7399A /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		79F45467288C833C00D8D667 /* DryFirePracticeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DryFirePracticeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F4546A288C833C00D8D667 /* DryFirePracticeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DryFirePracticeAppApp.swift; sourceTree = "<group>"; };
-		79F4546C288C833C00D8D667 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		79F4546E288C833D00D8D667 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79F45471288C833D00D8D667 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		79F45478288C83AA00D8D667 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +40,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79BE87A42892CBB700E7399A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79BE87A72892CCC400E7399A /* TimerButton.swift */,
+				79BE87AE289442C000E7399A /* AudioPlayer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79BE87A92894425B00E7399A /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				79BE87AA2894428700E7399A /* Timer_Beep.aif */,
+				79BE87AC2894429000E7399A /* Par_Timer_Beep.aif */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		79F4545E288C833C00D8D667 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +77,10 @@
 		79F45469288C833C00D8D667 /* DryFirePracticeApp */ = {
 			isa = PBXGroup;
 			children = (
+				79BE87A92894425B00E7399A /* Sounds */,
+				79BE87A42892CBB700E7399A /* Model */,
+				79F4547C288C83BA00D8D667 /* Views */,
 				79F4546A288C833C00D8D667 /* DryFirePracticeAppApp.swift */,
-				79F4546C288C833C00D8D667 /* ContentView.swift */,
 				79F4546E288C833D00D8D667 /* Assets.xcassets */,
 				79F45470288C833D00D8D667 /* Preview Content */,
 			);
@@ -65,6 +93,14 @@
 				79F45471288C833D00D8D667 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		79F4547C288C83BA00D8D667 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79F45478288C83AA00D8D667 /* HomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +163,8 @@
 			files = (
 				79F45472288C833D00D8D667 /* Preview Assets.xcassets in Resources */,
 				79F4546F288C833D00D8D667 /* Assets.xcassets in Resources */,
+				79BE87AD2894429000E7399A /* Par_Timer_Beep.aif in Resources */,
+				79BE87AB2894428700E7399A /* Timer_Beep.aif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79F4546D288C833C00D8D667 /* ContentView.swift in Sources */,
+				79F45479288C83AA00D8D667 /* HomeView.swift in Sources */,
+				79BE87A82892CCC400E7399A /* TimerButton.swift in Sources */,
 				79F4546B288C833C00D8D667 /* DryFirePracticeAppApp.swift in Sources */,
+				79BE87AF289442C000E7399A /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
